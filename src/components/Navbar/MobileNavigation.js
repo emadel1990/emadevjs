@@ -15,7 +15,7 @@ function MobileNavigation({ isOpen }) {
       setOpenStr(false);
       isOpen(false);
     }
-  }, [open]);
+  }, [open, isOpen]);
 
   window.addEventListener(
     "resize",
