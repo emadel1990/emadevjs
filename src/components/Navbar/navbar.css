@@ -1,0 +1,32 @@
+.logo{
+    display: flex;
+    margin-left: 30px;
+    color: #64ffda;
+    font-size: 40px;
+    font-weight: 600;
+}
+.logo .e{
+    transform: scaleX(-1);
+
+}
+/* .nav-item{
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 1;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+} */
+.nav-item:hover{
+    opacity: 1;
+    color:white
+}
+.navbar1{
+   
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}

@@ -1,0 +1,7 @@
+.navigation{
+    
+     
+}
+@media (max-width:990px) {
+    .navigation{display: none;}
+}
