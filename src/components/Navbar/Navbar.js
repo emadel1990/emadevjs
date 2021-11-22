@@ -5,23 +5,12 @@ import MobileNavigation from "./MobileNavigation";
 
 function Navbar() {
   const [open, isOpen] = useState(false);
-  const estilo = {
-    desenfoque: {
-      filter: "blur(2px)",
-    },
-    sindesenfoque: {
-      filter: "blur(0px)",
-    },
-  };
+
   return (
     <div className="navbar1">
-      <div
-        className="logo"
-        style={open ? estilo.desenfoque : estilo.sindesenfoque}
-      >
-        {/* <img src={logo} alt="logo" className="logo"></img> */}
-        <p className="e">E</p>
-        <p className="d">D</p>
+      <div className={open ? "logo desenfoque" : "logo"}>
+        <p className="e noselect">E</p>
+        <p className="d noselect">D</p>
       </div>
       <div>
         <Navigation />

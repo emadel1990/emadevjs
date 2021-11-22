@@ -1,12 +1,15 @@
+@import '../../index.css';
+
 .mobileNavigation{
     display: flex;
     align-items: center; 
 }
-.hamburger{
+.hamburger-icon{
     z-index: 99;
     position: absolute;
     right: 5%;
     cursor: pointer;
+    color: var(--primary-color);
 }
 @media (min-width:990px){
     .mobileNavigation{

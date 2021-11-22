@@ -1,7 +1,12 @@
-.navigation{
-    
-     
-}
+
 @media (max-width:990px) {
-    .navigation{display: none;}
+    .navigation{
+        display: none;
+    }
 }
+
+.navigation{
+    padding-top: 10px;
+}
+
+

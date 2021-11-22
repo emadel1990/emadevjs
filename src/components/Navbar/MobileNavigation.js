@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./mobileNavigation.css";
 import NavLinks from "./NavLinks";
-import { BiMenuAltRight } from "react-icons/bi";
-import { CgCloseO } from "react-icons/cg";
+import { Sling as Hamburger } from "hamburger-react";
 
 function MobileNavigation({ isOpen }) {
   const [open, setOpen] = useState(false);
@@ -18,24 +17,6 @@ function MobileNavigation({ isOpen }) {
     }
   }, [open]);
 
-  const menuOpen = (
-    <BiMenuAltRight
-      className="hamburger"
-      size="40px"
-      color="#64ffda"
-      onClick={() => setOpen(!open)}
-    />
-  );
-  const menuClosed = (
-    <CgCloseO
-      className="hamburger"
-      size="40px"
-      color="#64ffda"
-      onClick={() => {
-        setOpen(!open);
-      }}
-    />
-  );
   window.addEventListener(
     "resize",
     function () {
@@ -48,7 +29,9 @@ function MobileNavigation({ isOpen }) {
 
   return (
     <nav className="mobileNavigation">
-      {!open ? menuOpen : menuClosed}
+      <div className="hamburger-icon">
+        <Hamburger toggle={() => setOpen(!open)} toggled={open} />
+      </div>
       <NavLinks openStr={openStr} />
     </nav>
   );

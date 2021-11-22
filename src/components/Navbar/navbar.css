@@ -4,16 +4,34 @@
     color: #64ffda;
     font-size: 40px;
     font-weight: 600;
+    transition: 0.5s;
+}
+.logo.desenfoque{
+    filter: blur(2px);
+    transition: 0.5s;
 }
 .logo .e{
-    transform: scaleX(-1);
-
+    transform: scalex(-1);
 }
 .navbar1{
-   
+    position: relative;
     min-height: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
+}
+
+.noselect {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+@media(min-width:990px){
+    .navbar1{
+        padding: 0px 50px 0px 50px;
+    }
 }
