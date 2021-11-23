@@ -23,13 +23,15 @@ function Phrases() {
   }, [consultarAPi]);
 
   return (
-    <div onClick={consultarAPi} className="phrases">
+    <button type="button" onClick={consultarAPi} className="phrases">
       <p className="text">{`" ${prhase.text} "`}</p>
-      <p className="author">{`${prhase.author}`}</p>
+      <p className="author">
+        {prhase.author === null ? `Anonymous` : `${prhase.author}`}
+      </p>
       {/* <button type="button" className="insipre">
         Inspire
       </button> */}
-    </div>
+    </button>
   );
 }
 
