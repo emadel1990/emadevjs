@@ -13,7 +13,7 @@ function MobileNavigation({ setOpenStrNav }) {
       setOpenStrNav(false);
       /* isOpen(false); */
     }
-  }, [open]);
+  }, [open, setOpenStrNav]);
 
   window.addEventListener(
     "resize",
