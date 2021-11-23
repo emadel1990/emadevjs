@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./mobileNavigation.css";
 import { Sling as Hamburger } from "hamburger-react";
 
-function MobileNavigation({ setOpenStrNav }) {
+function MobileNavigation({ openStr, setOpenStrNav }) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(openStr);
+  }, [openStr, setOpen]);
 
   useEffect(() => {
     if (open) {

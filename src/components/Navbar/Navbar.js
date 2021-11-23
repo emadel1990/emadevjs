@@ -5,8 +5,8 @@ import MobileNavigation from "./MobileNavigation";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 
-function Navbar({ setOpenStrApp }) {
-  const [openStr, setOpenStrNav] = useState(false);
+function Navbar({ openStr, setOpenStrApp }) {
+  /* const [openStr, setOpenStrNav] = useState(false); */
 
   useEffect(() => {
     setOpenStrApp(openStr);
@@ -20,7 +20,7 @@ function Navbar({ setOpenStrApp }) {
       </Link>
       <div>
         <Navigation />
-        <MobileNavigation setOpenStrNav={setOpenStrNav} />
+        <MobileNavigation setOpenStrNav={setOpenStrApp} openStr={openStr} />
       </div>
       <NavLinks openStr={openStr} />
     </div>
