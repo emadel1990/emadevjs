@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ setOpenStrApp }) {
   const [openStr, setOpenStrNav] = useState(false);
+
+  useEffect(() => {
+    setOpenStrApp(openStr);
+  }, [openStr, setOpenStrApp]);
 
   return (
     <div className="navbar">
