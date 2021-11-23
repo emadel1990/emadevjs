@@ -1,10 +1,9 @@
 @import '../../index.css';
 
 .home{
-  z-index: 0;
+  position: relative;
 }
 .home.blur{
-  z-index: 0;
   filter: blur(2px);
   transition: 0.5s;
 }

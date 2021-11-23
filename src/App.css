@@ -1,31 +1,32 @@
 .app{
+    position: absolute;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     background: rgb(0,7,54);
     background: linear-gradient(0deg, rgb(0, 41, 54) 0%, rgb(0, 12, 51) 100%);
-    z-index: -100;
+    display: flex;
+    justify-content: center;
+    /* z-index: 100;  */
 }
 
 /* NORMAL */
 @media(min-width:990px){
-    .app{
-        display: flex;
-        justify-content: center;
-    }
     .home{
+        height: 100%;
         width: 55%;
-        position: absolute;
         color: white;
-        margin-top: 280px;
+        padding-top: 240px;
     }
 }
 /* MOBILE */
 @media(max-width:990px){
+    /* .app{
+        position: absolute;
+    } */
     .home{
-            position: absolute;
             color: white;
-            margin-top: 150px;
-            padding: 0px 20px 0px 20px;
+            padding: 150px 20px 0px 20px;
         }
 }

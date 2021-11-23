@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import BlurContext from "../Hooks/blurContext";
 import "./Home.css";
+import Phrases from "../Phrases/Phrases";
 
 function Home() {
   const blur = useContext(BlurContext);
 
   return (
     <div className={blur ? "home blur" : "home"}>
+      <Phrases />
       <p className="myName noselect">Hi, my name is</p>
       <h1 className="fullName noselect">Emanuel Delgado.</h1>
       <h1 className="description noselect">

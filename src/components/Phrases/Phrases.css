@@ -1,0 +1,40 @@
+@import '../../index.css';
+
+.text, .author{
+    font-family: var(--phrase-style);
+    cursor: pointer;
+    z-index: 99; 
+}
+.phrases{
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+    margin: 0px 0px 60px 0px;
+    padding-top: 10px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+.text{
+    opacity: 0.85;
+}
+.author{
+    opacity: 0.95;
+}
+@media(min-width:990px){
+    .text, .author{
+        font-size: 30px;
+        padding: 10px 0px 15px 20px;
+    }
+    .author{
+        padding: 5px 0px 15px 45px
+    }
+}
+@media(max-width:990px){
+    .text, .author{
+        padding: 10px 65px 10px 65px;
+        font-size: 20px;
+    }
+    .author{
+        padding-bottom: 20px;
+    }
+}

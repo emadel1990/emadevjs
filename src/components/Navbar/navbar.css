@@ -5,11 +5,12 @@
     font-family: var(--letter-style-2);
     opacity: 0.6;
     display: flex;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     color: #64ffda;
     font-size: 60px;
     transition: 0.5s;
     text-decoration: none;
+    box-shadow: 0 0 1px 1px #64ffda;
 }
 .logo:hover{
     color: white;
@@ -21,6 +22,10 @@
 .logo .e{
     transform: scalex(-1);
     
+}
+.e, .d{
+    margin-top: -10px;
+     margin-bottom: -10px;
 }
 .navbar{
     position: fixed;
@@ -49,12 +54,14 @@
         padding: 0px 0px 0px 15px;
     }
     .logo{
-        margin-left: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+       
     }
 }
 /* NORMAL */
 @media(min-width:990px){
     .navbar{
-        padding: 0px 50px 0px 50px;
+        padding: 13px 50px 0px 50px;
     }
 }

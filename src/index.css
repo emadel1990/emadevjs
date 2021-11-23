@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 :root{
     --primary-color: #64ffda;
@@ -8,6 +9,7 @@
     --letter-style: 'Roboto Mono', monospace;
     --h1-style: 'Righteous', cursive;
     --letter-style-2: 'Fira Code', monospace;
+    --phrase-style: 'Cinzel', serif;
 }
 *{
     margin: 0;
