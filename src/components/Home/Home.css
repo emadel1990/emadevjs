@@ -2,6 +2,7 @@
 
 .home{
   position: relative;
+  width: 100%;
 }
 .home.blur{
   filter: blur(2px);
@@ -55,4 +56,17 @@
   .description{
     font-size: 35px;
   }
+  .home{
+            color: white;
+            padding: 150px 50px 0px 50px;
+        }
+}
+/* NORMAL */
+@media(min-width:990px){
+    .home{
+        height: 100%;
+        width: 55%;
+        color: white;
+        padding-top: 240px;
+    }
 }

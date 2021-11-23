@@ -10,20 +10,3 @@
     justify-content: center;
     z-index: -1000; 
 }
-
-/* NORMAL */
-@media(min-width:990px){
-    .home{
-        height: 100%;
-        width: 55%;
-        color: white;
-        padding-top: 240px;
-    }
-}
-/* MOBILE */
-@media(max-width:990px){
-    .home{
-            color: white;
-            padding: 150px 20px 0px 20px;
-        }
-}
