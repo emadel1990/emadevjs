@@ -3,6 +3,7 @@ h1 {
   font-size: 40px;
 }
 .ed{
+    font-family: var(--letter-style);
     width: 100%;
     height: 100%;
     position: absolute;

@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./mobileNavigation.css";
-import NavLinks from "./NavLinks";
 import { Sling as Hamburger } from "hamburger-react";
 
-function MobileNavigation({ isOpen }) {
+function MobileNavigation({ setOpenStrNav }) {
   const [open, setOpen] = useState(false);
-  const [openStr, setOpenStr] = useState(false);
 
   useEffect(() => {
     if (open) {
-      setOpenStr(true);
-      isOpen(true);
+      setOpenStrNav(true);
+      /* isOpen(true); */
     } else {
-      setOpenStr(false);
-      isOpen(false);
+      setOpenStrNav(false);
+      /* isOpen(false); */
     }
-  }, [open, isOpen]);
+  }, [open]);
 
   window.addEventListener(
     "resize",
@@ -32,7 +30,7 @@ function MobileNavigation({ isOpen }) {
       <div className="hamburger-icon">
         <Hamburger toggle={() => setOpen(!open)} toggled={open} />
       </div>
-      <NavLinks openStr={openStr} />
+      {/* <NavLinks openStr={openStr} /> */}
     </nav>
   );
 }

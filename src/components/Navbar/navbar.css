@@ -1,10 +1,18 @@
+@import '../../index.css';
+
+
 .logo{
+    font-family: var(--letter-style-2);
+    opacity: 0.6;
     display: flex;
     margin-left: 30px;
     color: #64ffda;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 60px;
     transition: 0.5s;
+    text-decoration: none;
+}
+.logo:hover{
+    color: white;
 }
 .logo.desenfoque{
     filter: blur(2px);
@@ -12,15 +20,19 @@
 }
 .logo .e{
     transform: scalex(-1);
+    
 }
-.navbar1{
-    position: relative;
+.navbar{
+    position: fixed;
     min-height: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    padding: 10px 50px 0px 50px;
     width: 100%;
+    z-index: 2;
 }
 
 .noselect {
@@ -30,8 +42,19 @@
   user-select: none;
 }
 
+
+/* MOBILE */
+@media(max-width:990px){
+    .navbar{
+        padding: 0px 0px 0px 15px;
+    }
+    .logo{
+        margin-left: 0;
+    }
+}
+/* NORMAL */
 @media(min-width:990px){
-    .navbar1{
+    .navbar{
         padding: 0px 50px 0px 50px;
     }
 }

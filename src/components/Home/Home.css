@@ -1,0 +1,54 @@
+@import '../../index.css';
+
+.about{
+  z-index: 0;
+}
+
+.myName{
+  font-family: var(--letter-style-2);
+  color: rgb(199, 255, 242);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.myDescription{
+  font-family: var(--letter-style-2);
+  color: rgb(199, 255, 242);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.fullName{
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(132, 147, 153));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--h1-style);
+  font-size: 70px;
+}
+.description{
+  background: -webkit-linear-gradient(rgb(176, 196, 197), rgb(87, 101, 107));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  font-family: var(--h1-style);
+  font-size: 70px;
+}
+
+.noselect {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+
+/* MOBILE */
+@media(max-width:990px){
+  .fullName{
+    font-size: 35px;
+  }
+  .description{
+    font-size: 35px;
+  }
+}

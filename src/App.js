@@ -2,8 +2,12 @@ import React, { useEffect } from "react";
 import "./App.css";
 import "./components/Loader/Loader.css";
 import Navbar from "./components/Navbar/Navbar";
+import Loader from "./components/Loader/Loader";
+import { Outlet } from "react-router-dom";
 
 function App() {
+  /*  const [openStr, setOpenStrApp] = useState(false); */
+
   useEffect(() => {
     setTimeout(function () {
       document.body.classList.add("loaded");
@@ -11,16 +15,9 @@ function App() {
   });
   return (
     <div className="app">
-      <div id="loader-wrapper">
-        <div className="ed">
-          <span className="letterE">E</span>
-          <span className="letterD">D</span>
-        </div>
-        <div id="loader"></div>
-        <div className="loader-section section-left"></div>
-        <div className="loader-section section-right"></div>
-      </div>
+      <Loader />
       <Navbar />
+      <Outlet />
     </div>
   );
 }

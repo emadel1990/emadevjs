@@ -1,21 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
+import NavLinks from "./NavLinks";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [open, isOpen] = useState(false);
+  const [openStr, setOpenStrNav] = useState(false);
 
   return (
-    <div className="navbar1">
-      <div className={open ? "logo desenfoque" : "logo"}>
+    <div className="navbar">
+      <Link to="/home" className={openStr ? "logo desenfoque" : "logo"}>
         <p className="e noselect">E</p>
         <p className="d noselect">D</p>
-      </div>
+      </Link>
       <div>
         <Navigation />
-        <MobileNavigation isOpen={isOpen} />
+        <MobileNavigation setOpenStrNav={setOpenStrNav} />
       </div>
+      <NavLinks openStr={openStr} />
     </div>
   );
 }
