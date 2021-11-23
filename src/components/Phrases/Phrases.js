@@ -23,7 +23,7 @@ function Phrases() {
   }, [consultarAPi]);
 
   return (
-    <button type="button" onClick={consultarAPi} className="phrases">
+    <div onClick={consultarAPi} className="phrases">
       <p className="text">{`" ${prhase.text} "`}</p>
       <p className="author">
         {prhase.author === null ? `Anonymous` : `${prhase.author}`}
@@ -31,7 +31,7 @@ function Phrases() {
       {/* <button type="button" className="insipre">
         Inspire
       </button> */}
-    </button>
+    </div>
   );
 }
 

@@ -14,14 +14,9 @@ function App() {
       document.body.classList.add("loaded");
     }, 2000);
   });
-  useEffect(() => {
-    console.log(openStr);
-  }, [openStr]);
-
   const handleClick = (e) => {
     if (e.target.className !== "background open") {
       setOpenStrApp(false);
-      console.log(openStr);
     }
   };
   return (

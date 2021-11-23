@@ -2,29 +2,20 @@
 
 .text, .author{
     font-family: var(--phrase-style);
-    cursor: pointer;
-    z-index: 99; 
-    /* -webkit-user-select: none;  
+    cursor: pointer; 
+    -webkit-user-select: none;  
     -moz-user-select: none;    
     -ms-user-select: none;      
-    user-select: none; */
+    user-select: none;
 }
 .phrases{
     background: transparent;
-    border: none;
-    background-color: transparent;
     color: white;
     text-align: left;
     box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
     margin: 0px 0px 60px 0px;
     padding-top: 10px;  
     width: 100%;
-}
-.phrases:active{
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    user-select: none; 
 }
 
 .text{

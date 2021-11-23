@@ -8,7 +8,7 @@
     background: linear-gradient(0deg, rgb(0, 41, 54) 0%, rgb(0, 12, 51) 100%);
     display: flex;
     justify-content: center;
-    /* z-index: 100;  */
+    z-index: -1000; 
 }
 
 /* NORMAL */
@@ -22,9 +22,6 @@
 }
 /* MOBILE */
 @media(max-width:990px){
-    /* .app{
-        position: absolute;
-    } */
     .home{
             color: white;
             padding: 150px 20px 0px 20px;

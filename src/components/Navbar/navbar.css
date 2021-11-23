@@ -5,12 +5,15 @@
     font-family: var(--letter-style-2);
     opacity: 0.6;
     display: flex;
-    /* margin-left: 30px; */
     color: #64ffda;
     font-size: 60px;
     transition: 0.5s;
     text-decoration: none;
     box-shadow: 0 0 1px 1px #64ffda;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 .logo:hover{
     color: white;
