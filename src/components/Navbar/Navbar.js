@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./navbar.css";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
