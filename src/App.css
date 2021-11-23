@@ -4,10 +4,10 @@
     min-height: 100vh;
     background: rgb(0,7,54);
     background: linear-gradient(0deg, rgb(0, 41, 54) 0%, rgb(0, 12, 51) 100%);
+    z-index: -100;
 }
 
-
-
+/* NORMAL */
 @media(min-width:990px){
     .app{
         display: flex;
@@ -20,6 +20,7 @@
         margin-top: 280px;
     }
 }
+/* MOBILE */
 @media(max-width:990px){
     .home{
             position: absolute;
