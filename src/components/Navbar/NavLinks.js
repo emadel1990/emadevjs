@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "./navLinks.css";
-import { Link } from "react-router-dom";
 
 function NavLinks({ openStr }) {
   return (
@@ -9,24 +8,24 @@ function NavLinks({ openStr }) {
         <div className={openStr ? "background open" : "background"} />
         <ul className={openStr ? "sections open" : "sections"}>
           <li className="nav-item">
-            <Link className="nav-sub-item" to="/home">
+            <a className="nav-sub-item" href="#home">
               <span className="span-nav">01.</span>Home
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link className="nav-sub-item" to="/experience">
+            <a className="nav-sub-item" href="#experience">
               <span className="span-nav">02.</span>Experience
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link className="nav-sub-item" to="/work">
+            <a className="nav-sub-item" href="#work">
               <span className="span-nav">03.</span>Work
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link className="nav-sub-item" to="/contact">
+            <a className="nav-sub-item" href="#contact">
               <span className="span-nav">04.</span>Contact
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
             <button type="button" className="resume">

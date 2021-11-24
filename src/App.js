@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./components/Loader/Loader.css";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Experience from "./components/Experience/Experience";
 import Loader from "./components/Loader/Loader";
-import { Outlet } from "react-router-dom";
 import BlurContext from "./components/Hooks/blurContext";
 
 function App() {
@@ -24,7 +25,16 @@ function App() {
       <div className="app" onClick={(e) => handleClick(e)}>
         <Loader />
         <Navbar setOpenStrApp={setOpenStrApp} openStr={openStr} />
-        <Outlet />
+        <div className="sections-content">
+          <section id="home">
+            <Home />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="work"></section>
+          <section id="contact"></section>
+        </div>
       </div>
     </BlurContext.Provider>
   );

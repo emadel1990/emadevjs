@@ -28,9 +28,6 @@ function Phrases() {
       <p className="author">
         {prhase.author === null ? `Anonymous` : `${prhase.author}`}
       </p>
-      {/* <button type="button" className="insipre">
-        Inspire
-      </button> */}
     </div>
   );
 }

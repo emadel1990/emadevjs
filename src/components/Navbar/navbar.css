@@ -40,7 +40,7 @@
     flex-wrap: nowrap;
     padding: 10px 50px 0px 50px;
     width: 100%;
-    z-index: 2;
+    z-index: 12;
 }
 
 .noselect {

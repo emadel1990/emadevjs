@@ -1,13 +1,13 @@
 @import '../../index.css';
 
-.home{
-  position: relative;
+.home{  
   width: 100%;
 }
 .home.blur{
   filter: blur(2px);
   transition: 0.5s;
 }
+
 
 .myName{
   font-family: var(--letter-style-2);
@@ -57,16 +57,28 @@
     font-size: 35px;
   }
   .home{
-            color: white;
-            padding: 150px 50px 0px 50px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 150px 50px 0px 50px;
         }
 }
 /* NORMAL */
 @media(min-width:990px){
     .home{
         height: 100%;
-        width: 55%;
+        width: 100%;
         color: white;
-        padding-top: 240px;
+        padding-top: 250px;
+        padding-left: 200px;
+        padding-right: 50px;
+    }
+    .home-content{
+      display: flex;
+    }
+    .my-description{
+      width: 100%;
+    }
+    .phrases{
     }
 }
