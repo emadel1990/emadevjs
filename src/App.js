@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import "./components/Loader/Loader.css";
+import "./app.css";
+import "./components/Loader/loader.css";
 import Loader from "./components/Loader/Loader";
 import BlurContext from "./Hooks/blurContext";
-import { useInView } from "react-intersection-observer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
+import AboutMe from "./components/AboutMe/AboutMe";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
+import useInViewScroll from "./Hooks/useInViewScroll";
 
 function App() {
-  /* State for */
+  /* State for blur content */
   const [openStr, setOpenStrApp] = useState(false);
-  const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 1,
-    rootMargin: "70%",
-  });
+  /* State for inView sections */
+  const [aboutMe, aboutMeinView] = useInViewScroll();
+  const [experience, expinView] = useInViewScroll();
 
   useEffect(() => {
     setTimeout(function () {
@@ -40,11 +39,17 @@ function App() {
             <Home />
           </section>
           <section
-            id="experience"
-            ref={ref}
-            className={inView ? "exp appear" : "exp noappear"}
+            id="aboutMe"
+            ref={aboutMe}
+            className={aboutMeinView ? "aboutMe appear" : "aboutMe noappear"}
           >
-            {/* <h1>HOLA</h1> */}
+            <AboutMe />
+          </section>
+          <section
+            id="experience"
+            ref={experience}
+            className={expinView ? "exp appear" : "exp noappear"}
+          >
             <Experience />
           </section>
           <section id="work"></section>

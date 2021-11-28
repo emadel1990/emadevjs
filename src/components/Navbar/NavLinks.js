@@ -17,11 +17,11 @@ function NavLinks({ openStr }) {
         <div className={openStr ? "background open" : "background"} />
         <ul className={openStr ? "sections open" : "sections"}>
           <li className="nav-item">
-            <div className="nav-sub-item" id="linkapp" onClick={goTo}>
-              <span className="span-nav" id="linkapp">
+            <div className="nav-sub-item" id="linkaboutMe" onClick={goTo}>
+              <span className="span-nav" id="linkaboutMe">
                 01.
               </span>
-              Home
+              About me
             </div>
           </li>
           <li className="nav-item">

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import BlurContext from "../../Hooks/blurContext";
-import "./Home.css";
+import "./home.css";
 
 function Home() {
   const blur = useContext(BlurContext);

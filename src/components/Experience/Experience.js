@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import BlurContext from "../../Hooks/blurContext";
-import "./Experience.css";
+import "./experience.css";
 
 const Experience = () => {
   const blur = useContext(BlurContext);
   return (
     <div className={blur ? "exp blur fade-in" : "exp fade-in"}>
-      <h1>HOLA MUNDOooooooooooooooo</h1>
+      <div className="exp-content">
+        <h1>HOLAA MUNDOO</h1>
+      </div>
     </div>
   );
 };

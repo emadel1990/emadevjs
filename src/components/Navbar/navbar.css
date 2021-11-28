@@ -15,6 +15,7 @@
     -ms-user-select: none;      
     user-select: none;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .logo:hover{
     color: #8892b0;
@@ -32,6 +33,7 @@
     margin-bottom: -10px;
 }
 .navbar{
+    background-color: rgba(10,25,47, .7);
     position: fixed;
     min-height: 50px;
     display: flex;
@@ -43,6 +45,7 @@
     width: 100%;
     z-index: 12;
     top: 0;
+    
     transition: all 500ms ease;    
 }
 .navbar.hidde{
@@ -53,7 +56,7 @@
     background-color: #2f7766;
     position: absolute;
     left: 0;
-    top: calc(100% + 8px);
+    top: calc(100%);
     width: 100%;
     height: 1px;
     z-index: -1;
@@ -82,5 +85,14 @@
 @media(min-width:990px){
     .navbar{
         padding: 13px 50px 0px 50px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    
     }
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .navbar {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+}
 }

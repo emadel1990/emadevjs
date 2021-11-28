@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 import { RiInstagramFill } from "react-icons/ri";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ImTwitter } from "react-icons/im";

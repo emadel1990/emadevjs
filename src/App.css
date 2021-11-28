@@ -11,25 +11,22 @@
     z-index: -1000; 
 
 }
-
 .sections-content{
-    width: 100%;
+    width: 70%;
     height: 100%;
+}
+.appear {
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+.noappear {
+  transition: all 1s ease;
+  opacity: 0;
 }
 @media(min-width:990px){
     #home{
-        display: flex;
-        justify-content: center;
-       /*  height: 1950px; */
-       height: 100vh;
+      /* display: flex;
+      justify-content: center;
+      height: 100vh; */
     }
-}
-
-.appear {
-  opacity: 1;
-  transition: all 3s ease;
-}
-
-.noappear {
-  opacity: 0;
 }

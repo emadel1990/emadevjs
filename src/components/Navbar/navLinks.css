@@ -24,7 +24,7 @@
     }
     .nav-item{
         font-weight: 200;
-        margin-right: 30px;
+        margin-left: 30px;
         text-decoration: none;
         color: white;
         transition: all 0.2s ease;
