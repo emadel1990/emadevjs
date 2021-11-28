@@ -1,8 +1,5 @@
 @import '../../index.css';
 
-.home{  
-  width: 100%;
-}
 .home.blur{
   filter: blur(2px);
   transition: 0.5s;
@@ -11,18 +8,18 @@
 .myName{
   font-family: var(--letter-style-2);
   color: rgb(199, 255, 242);
-  font-size: 25px;
+  font-size: 1vw;
   font-weight: 400;
   margin-bottom: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .myDescription{
   font-family: var(--letter-style-2);
   color: rgb(199, 255, 242);
-  font-size: 25px;
+  font-size: 1vw;
   font-weight: 400;
   margin-bottom: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .fullName{
@@ -30,7 +27,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--h1-style);
-  font-size: 5vw;
+  font-size: 3.5vw;
   letter-spacing: 7px;
 }
 .description{
@@ -39,7 +36,7 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
   font-family: var(--h1-style);
-  font-size: 5vw;
+  font-size: 3.5vw;
   letter-spacing: 7px;
 }
 
@@ -76,9 +73,8 @@
         height: 100%;
         width: 100%;
         color: white;
-        padding-top: 250px;/* 
-        padding-left: 300px;
-        padding-right: 50px; */
+        padding-top: 250px;
+        padding-left: 2vw;
         display: flex;
         justify-content: center;
     }

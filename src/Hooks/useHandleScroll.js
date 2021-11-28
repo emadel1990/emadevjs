@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 const useHandleScroll = () => {
   const prevScrollY = useRef(0);
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {

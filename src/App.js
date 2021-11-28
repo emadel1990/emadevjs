@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./components/Loader/Loader.css";
+import Loader from "./components/Loader/Loader";
+import BlurContext from "./Hooks/blurContext";
 import { useInView } from "react-intersection-observer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Experience from "./components/Experience/Experience";
-import Loader from "./components/Loader/Loader";
-import BlurContext from "./Hooks/blurContext";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+  /* State for */
   const [openStr, setOpenStrApp] = useState(false);
   const { ref, inView } = useInView({
     /* Optional options */
@@ -48,6 +50,7 @@ function App() {
           <section id="work"></section>
           <section id="contact"></section>
         </div>
+        <Footer />
       </div>
     </BlurContext.Provider>
   );

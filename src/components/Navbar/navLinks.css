@@ -15,14 +15,14 @@
         transition: right 0.4s ease;
     }
     .nav-sub-item{
-        font-size: 22px;
+        font-size: 15px;
         font-family: 'Roboto Mono', monospace;
+        font-weight: 600;
         text-decoration: none;
         color: white;
         transition: all 300ms ease;
     }
     .nav-item{
-        font-size: 20px;
         font-weight: 200;
         margin-right: 30px;
         text-decoration: none;
@@ -31,8 +31,7 @@
         cursor: pointer;
     }
      .nav-sub-item:hover{
-       /*  color: var(--primary-color); */
-        color: #8892b0;
+        color: var(--primary-color);
     }
     .span-nav{
         color:var(--primary-color)
