@@ -6,7 +6,7 @@ const Experience = () => {
   const blur = useContext(BlurContext);
   return (
     <div className={blur ? "exp blur fade-in" : "exp fade-in"}>
-      <h1>HOLA MUNDO</h1>
+      <h1>HOLA MUNDOooooooooooooooo</h1>
     </div>
   );
 };
