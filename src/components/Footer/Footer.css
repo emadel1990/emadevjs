@@ -72,6 +72,38 @@ a{
 }
 @media(max-width:990px){
     .footer{
-        display: none;
+        position: absolute;
+        bottom: 10px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
+    .footer-right{
+        position: absolute;
+        margin-top: -100px;
+    }
+    .ul-left{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        
+    }
+    .email-p{
+        text-decoration: none;
+        color: white;
+        letter-spacing: 3px;
+        font-family: var(--letter-style-2);
+        font-size: 15px;
+    }
+    a{
+        color: white;
+    }
+    
+    
 }

@@ -50,6 +50,9 @@
 
 /* MOBILE */
 @media(max-width:990px){
+  .myName, .myDescription{
+    font-size: 15px;
+  }
   .fullName{
     font-size: 35px;
   }
