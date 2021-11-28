@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./components/Loader/loader.css";
-import "./App.css";
+import "./app.css";
 import Loader from "./components/Loader/Loader";
 import BlurContext from "./Hooks/blurContext";
 import Navbar from "./components/Navbar/Navbar";
