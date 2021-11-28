@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import BlurContext from "../Hooks/blurContext";
+import BlurContext from "../../Hooks/blurContext";
 import "./Home.css";
-import Phrases from "../Phrases/Phrases";
 
 function Home() {
   const blur = useContext(BlurContext);
@@ -19,7 +18,6 @@ function Home() {
             I’m a Frontend web developer and sometimes, designer.
           </p>
         </div>
-        <Phrases className="phrases" />
       </div>
     </div>
   );

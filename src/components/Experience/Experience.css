@@ -8,3 +8,12 @@
   filter: blur(2px);
   transition: 0.5s;
 }
+
+/* .fade-in{
+    opacity: 0;
+    transition: all 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+} */
