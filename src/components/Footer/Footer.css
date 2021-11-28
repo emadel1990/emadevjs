@@ -1,6 +1,6 @@
 @import '../../index.css';
 
-
+/* DESKTOP */
 @media(min-width:990px){
 .footer{
     position: fixed;
@@ -70,8 +70,10 @@ a{
   
 
 }
+/* MOBILE */
 @media(max-width:990px){
     .footer{
+        
         position: absolute;
         bottom: 10px;
         width: 100vw;
@@ -79,7 +81,6 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     .footer-right{
         position: absolute;
@@ -92,6 +93,7 @@ a{
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
+        padding: 0px 150px 0px 150px;
         
     }
     .email-p{
@@ -104,6 +106,12 @@ a{
     a{
         color: white;
     }
-    
+
+    /* MOBILE SM */
+    @media(max-width:660px){
+        .ul-left{
+           padding: 0px 50px 0px 50px;
+        }
+    }
     
 }
