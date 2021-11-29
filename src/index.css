@@ -13,7 +13,7 @@
     --phrase-style: 'Cinzel', serif;
     --font-sans: 'Open Sans', sans-serif;
 }
-body{
+html,body{
     margin: 0;
     padding: 0;
     width: 100%;

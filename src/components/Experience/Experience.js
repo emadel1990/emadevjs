@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <div className={blur ? "exp blur fade-in" : "exp fade-in"}>
       <div className="exp-content">
-        <h1>HOLAA MUNDOO</h1>
+        <h1>Experience coming soon....</h1>
       </div>
     </div>
   );

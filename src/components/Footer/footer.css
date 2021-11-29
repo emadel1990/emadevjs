@@ -87,7 +87,6 @@ a{
         margin-top: -100px;
     }
     .ul-left{
-        background-color: red;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
