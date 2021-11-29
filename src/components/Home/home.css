@@ -2,7 +2,6 @@
 
 .home{
   min-width: 100%;
-  background-color: blue;
 }
 .home.blur{
   filter: blur(2px);
