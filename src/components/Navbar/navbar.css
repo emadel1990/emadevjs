@@ -42,10 +42,9 @@
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px 50px 0px 50px;
-    width: 100%;
+    min-width: 100%;
     z-index: 12;
     top: 0;
-    
     transition: all 500ms ease;    
 }
 .navbar.hidde{
@@ -77,22 +76,29 @@
     }
     .logo{
         margin-top: 10px;
-        margin-left: 10px;
-       
+        margin-left: 10px;       
     }
 }
 /* NORMAL */
 @media(min-width:990px){
     .navbar{
-        padding: 13px 50px 0px 50px;
+        padding: 0px 20px 0px 20px;
+    }
+    .logo{
+        margin-top: 10px;
+        margin-left: 25px;       
+    }
+    .navbar{
+        /* padding: 13px 50px 0px 50px; */
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-    
+         
     }
     @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .navbar {
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
     }
+    
 }
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root{
     --primary-color: #64ffda;
@@ -10,10 +11,12 @@
     --h1-style: 'Righteous', cursive;
     --letter-style-2: 'Fira Code', monospace;
     --phrase-style: 'Cinzel', serif;
+    --font-sans: 'Open Sans', sans-serif;
 }
-*{
+body{
     margin: 0;
     padding: 0;
+    width: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }

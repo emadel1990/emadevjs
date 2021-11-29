@@ -1,8 +1,123 @@
-h1{color: white;}
+@import '../../app.css';
 
+/* DESKTOP */
+@media(min-width:990px){
+    .aboutMe{
+        color: white;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;  
+    }
+    .aboutMe-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .container-aboutMe{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;
+    }
 
-.aboutMe{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 15px;
+        font-family: var(--letter-style);
+        width: 100%;
+    }
+    .title p{
+        font-size: 30px;
+        padding: 0px 15px 0px 0px;
+    }
+    .title-aboutMe{
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+    .line{
+        opacity: 0.3;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+    }
+
+    .aboutMe-description{
+        margin: 30px 0px 0px 0px;
+        color: rgb(0, 255, 242);
+        font-family: var(--font-sans);
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: justify;
+        width: 60%;
+        opacity: 0.9;
+    }
+    .mypicture{
+        cursor: pointer;
+        margin: 35px 0px 10px 10px;
+        width: 350px;
+        height: 305px;
+        border-radius: 13px; 
+        opacity: 1;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: all 350ms ease;
+    }
+    .mypicture:hover {
+        transition: all 250ms ease;
+        filter: none;
+        -webkit-filter: grayscale(0);
+        transform: scale(1.1);
+    }
+}
+/* MOBILE */
+@media(max-width:990px){
+    .aboutMe{
+        margin-bottom: 50px;
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutMe-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+     .container-aboutMe{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+     .mypicture{/* 
+        margin: 35px 0px 10px 10px; */
+        width: 100%;
+        border-radius: 13px; 
+        opacity: 1;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 25px;
+        font-family: var(--letter-style);
+    }
+     .aboutMe-description{
+        color: rgb(0, 255, 242);
+        font-family: var(--font-sans);
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
 }

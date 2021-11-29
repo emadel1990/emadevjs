@@ -38,6 +38,7 @@ function App() {
           <section id="home">
             <Home />
           </section>
+
           <section
             id="aboutMe"
             ref={aboutMe}

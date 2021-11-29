@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     z-index: -1000; 
-
+    overflow-x: hidden;
 }
 .sections-content{
     width: 70%;
@@ -17,16 +17,10 @@
 }
 .appear {
   opacity: 1;
-  transition: all 1.5s ease;
+  transition: all 2.5s ease;
 }
 .noappear {
   transition: all 1s ease;
   opacity: 0;
 }
-@media(min-width:990px){
-    #home{
-      /* display: flex;
-      justify-content: center;
-      height: 100vh; */
-    }
-}
+

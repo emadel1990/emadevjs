@@ -4,7 +4,7 @@ function useInViewScroll(value) {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 1,
-    rootMargin: "65%",
+    rootMargin: "100%",
   });
   value = ref;
   return [value, inView];

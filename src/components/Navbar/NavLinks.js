@@ -49,9 +49,14 @@ function NavLinks({ openStr }) {
             </div>
           </li>
           <li className="nav-item">
-            <button type="button" className="resume">
+            <a
+              className="resume"
+              href="https://drive.google.com/file/d/1Fo4kjyxToWZ2WACnDVJ9dlOjURKfFaUz/view?usp=sharing"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Resume
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
